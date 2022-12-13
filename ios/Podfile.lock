@@ -1,0 +1,210 @@
+PODS:
+  - AgoraRtcEngine_iOS (3.4.6)
+  - AlipaySDK-iOS (15.7.9)
+  - amap_flutter_location (0.0.1):
+    - AMapLocation (~> 2.6.7)
+    - Flutter
+  - AMapFoundation (1.6.5.1)
+  - AMapLocation (2.6.7):
+    - AMapFoundation (~> 1.6.4)
+  - ar_rtc_engine (4.2.0):
+    - ARtcKit_iOS (= 4.1.2.4)
+    - Flutter
+  - ARtcKit_iOS (4.1.2.4)
+  - BSImagePicker (3.3.1)
+  - ease_call_kit (0.0.1):
+    - AgoraRtcEngine_iOS (= 3.4.6)
+    - EaseCallKit (= 3.8.1.1)
+    - Flutter
+    - HyphenateChat (~> 3.8.3.1)
+    - Masonry
+    - MBProgressHUD
+    - SDWebImage
+  - EaseCallKit (3.8.1.1):
+    - AgoraRtcEngine_iOS
+    - HyphenateChat
+    - Masonry
+    - SDWebImage
+  - Flutter (1.0.0)
+  - fluwx (0.0.1):
+    - Flutter
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HyphenateChat (3.8.3.1)
+  - im_flutter_sdk (0.0.1):
+    - Flutter
+    - HyphenateChat (= 3.8.3.1)
+  - image_gallery_saver (1.5.0):
+    - Flutter
+  - image_picker (0.0.1):
+    - Flutter
+  - keyboard_visibility (0.5.0):
+    - Flutter
+    - Reachability
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - multi_image_picker2 (5.0.00):
+    - BSImagePicker (~> 3.3.1)
+    - Flutter
+  - package_info (0.0.1):
+    - Flutter
+  - path_provider (0.0.1):
+    - Flutter
+  - "permission_handler (5.1.0+2)":
+    - Flutter
+  - Reachability (3.2)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+  - shared_preferences (0.0.1):
+    - Flutter
+  - sqflite (0.0.2):
+    - Flutter
+    - FMDB (>= 2.7.5)
+  - tobias (0.0.1):
+    - AlipaySDK-iOS (~> 15.7.9)
+    - Flutter
+  - TPNS-iOS (1.3.3.0)
+  - tpns_flutter_plugin (1.1.3):
+    - Flutter
+    - TPNS-iOS (= 1.3.3.0)
+  - url_launcher (0.0.1):
+    - Flutter
+  - video_player (0.0.1):
+    - Flutter
+  - wakelock (0.0.1):
+    - Flutter
+  - webview_flutter (0.0.1):
+    - Flutter
+  - xinstall_flutter_plugin (1.5.1):
+    - Flutter
+
+DEPENDENCIES:
+  - amap_flutter_location (from `.symlinks/plugins/amap_flutter_location/ios`)
+  - ar_rtc_engine (from `.symlinks/plugins/ar_rtc_engine/ios`)
+  - ease_call_kit (from `.symlinks/plugins/ease_call_kit/ios`)
+  - Flutter (from `Flutter`)
+  - fluwx (from `.symlinks/plugins/fluwx/ios`)
+  - im_flutter_sdk (from `.symlinks/plugins/im_flutter_sdk/ios`)
+  - image_gallery_saver (from `.symlinks/plugins/image_gallery_saver/ios`)
+  - image_picker (from `.symlinks/plugins/image_picker/ios`)
+  - keyboard_visibility (from `.symlinks/plugins/keyboard_visibility/ios`)
+  - multi_image_picker2 (from `.symlinks/plugins/multi_image_picker2/ios`)
+  - package_info (from `.symlinks/plugins/package_info/ios`)
+  - path_provider (from `.symlinks/plugins/path_provider/ios`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+  - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+  - sqflite (from `.symlinks/plugins/sqflite/ios`)
+  - tobias (from `.symlinks/plugins/tobias/ios`)
+  - tpns_flutter_plugin (from `.symlinks/plugins/tpns_flutter_plugin/ios`)
+  - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
+  - video_player (from `.symlinks/plugins/video_player/ios`)
+  - wakelock (from `.symlinks/plugins/wakelock/ios`)
+  - webview_flutter (from `.symlinks/plugins/webview_flutter/ios`)
+  - xinstall_flutter_plugin (from `.symlinks/plugins/xinstall_flutter_plugin/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AgoraRtcEngine_iOS
+    - AlipaySDK-iOS
+    - AMapFoundation
+    - AMapLocation
+    - ARtcKit_iOS
+    - BSImagePicker
+    - EaseCallKit
+    - FMDB
+    - HyphenateChat
+    - Masonry
+    - MBProgressHUD
+    - Reachability
+    - SDWebImage
+    - TPNS-iOS
+
+EXTERNAL SOURCES:
+  amap_flutter_location:
+    :path: ".symlinks/plugins/amap_flutter_location/ios"
+  ar_rtc_engine:
+    :path: ".symlinks/plugins/ar_rtc_engine/ios"
+  ease_call_kit:
+    :path: ".symlinks/plugins/ease_call_kit/ios"
+  Flutter:
+    :path: Flutter
+  fluwx:
+    :path: ".symlinks/plugins/fluwx/ios"
+  im_flutter_sdk:
+    :path: ".symlinks/plugins/im_flutter_sdk/ios"
+  image_gallery_saver:
+    :path: ".symlinks/plugins/image_gallery_saver/ios"
+  image_picker:
+    :path: ".symlinks/plugins/image_picker/ios"
+  keyboard_visibility:
+    :path: ".symlinks/plugins/keyboard_visibility/ios"
+  multi_image_picker2:
+    :path: ".symlinks/plugins/multi_image_picker2/ios"
+  package_info:
+    :path: ".symlinks/plugins/package_info/ios"
+  path_provider:
+    :path: ".symlinks/plugins/path_provider/ios"
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
+  shared_preferences:
+    :path: ".symlinks/plugins/shared_preferences/ios"
+  sqflite:
+    :path: ".symlinks/plugins/sqflite/ios"
+  tobias:
+    :path: ".symlinks/plugins/tobias/ios"
+  tpns_flutter_plugin:
+    :path: ".symlinks/plugins/tpns_flutter_plugin/ios"
+  url_launcher:
+    :path: ".symlinks/plugins/url_launcher/ios"
+  video_player:
+    :path: ".symlinks/plugins/video_player/ios"
+  wakelock:
+    :path: ".symlinks/plugins/wakelock/ios"
+  webview_flutter:
+    :path: ".symlinks/plugins/webview_flutter/ios"
+  xinstall_flutter_plugin:
+    :path: ".symlinks/plugins/xinstall_flutter_plugin/ios"
+
+SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: 8aa4a8e46bd81963607857b1d46703b93e4de156
+  AlipaySDK-iOS: 94ff4c0e17c5e7d126b8207596d5033006534c25
+  amap_flutter_location: 3e33b57f1aad80b0dfb4b399de857a1a9f071e62
+  AMapFoundation: b67560a6f21aab81c8c12f84616b55a3833b6253
+  AMapLocation: a46c30d9930d0f3a3bd21139d8f845d10ac3f01d
+  ar_rtc_engine: f87e1a8aede2d850c18dca7146754f9f03866a1e
+  ARtcKit_iOS: a418f3fb7f81d427564e84a197c59c74bb827623
+  BSImagePicker: 0fe04b574d4d6b81093785d2af6c26227efc8428
+  ease_call_kit: 6289ee2d3f4a152dcf7231fcb32a844e84cc9076
+  EaseCallKit: e7c3ed4608cf71674ac5aa49e98df190aa28309b
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  fluwx: c64c2b84b965279aaa251a80b5b6a1cd0ef7bd45
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HyphenateChat: dc9bedc84c610b9031c86a36b3231604d01026b4
+  im_flutter_sdk: 5c18ea8a555c109660c3f172e3df0cb3d13fea2f
+  image_gallery_saver: 259eab68fb271cfd57d599904f7acdc7832e7ef2
+  image_picker: e06f7a68f000bd36f552c1847e33cda96ed31f1f
+  keyboard_visibility: 96a24de806fe6823c3ad956c01ba2ec6d056616f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  multi_image_picker2: f81a13124e7a2bc48e7d15ee539a5f8b9ff4d407
+  package_info: 873975fc26034f0b863a300ad47e7f1ac6c7ec62
+  path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
+  permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+  shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
+  sqflite: 6d358c025f5b867b29ed92fc697fd34924e11904
+  tobias: 6872e2198dc30e17c10513b9ee114e28d099bc70
+  TPNS-iOS: 57a146496858ba2fb5d43e5f240feb19243b69cb
+  tpns_flutter_plugin: 66209ef2b055647d041c7ee580be4bf5e5e99f9d
+  url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
+  video_player: 9cc823b1d9da7e8427ee591e8438bfbcde500e6e
+  wakelock: d0fc7c864128eac40eba1617cb5264d9c940b46f
+  webview_flutter: 3603125dfd3bcbc9d8d418c3f80aeecf331c068b
+  xinstall_flutter_plugin: 5910b1129524bb889c1d0ac80183aa908af7dc82
+
+PODFILE CHECKSUM: f0a811637296b8be21b5d7f25753ceec40ac1f08
+
+COCOAPODS: 1.11.2
