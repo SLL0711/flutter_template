@@ -104,7 +104,7 @@ class _ChatPageState extends State<ChatPage>
 
   void joinChatRoom() async {
     try {
-      await EMClient.getInstance.chatRoomManager.joinChatRoom(widget.conv?.id);
+      await EMClient.getInstance.chatRoomManager.joinChatRoom(widget.conv!.id);
       _loadMessages();
     } on EMError catch (e) {
       print("加入房间失败 -- " + e.toString());
@@ -119,7 +119,7 @@ class _ChatPageState extends State<ChatPage>
     _scrollController.dispose();
     _inputBarEditingController.dispose();
     if (widget.conv?.type == EMConversationType.ChatRoom) {
-      EMClient.getInstance.chatRoomManager.leaveChatRoom(widget.conv?.id);
+      EMClient.getInstance.chatRoomManager.leaveChatRoom(widget.conv!.id);
     }
     EaseCallKit.dispose();
     super.dispose();
@@ -258,7 +258,7 @@ class _ChatPageState extends State<ChatPage>
       }
       if (msg.hasRead == false) {
         try {
-          await widget.conv.markMessageAsRead(msg.msgId);
+          await widget.conv.markMessageAsRead(msg.msgId!);
         } on EMError {}
       }
     }
@@ -293,10 +293,11 @@ class _ChatPageState extends State<ChatPage>
   _loadMessages({int count = 20, bool moveBottom = true}) async {
     try {
       List<EMMessage> msgs = await widget.conv.loadMessages(
-          startMsgId: _msgList.length > 0 ? _msgList.first.msgId : '',
+          startMsgId: _msgList.length > 0 ? _msgList.first.msgId! : '',
           loadCount: count);
       _msgList.insertAll(0, msgs);
-    } on EMError {} finally {
+    } on EMError {
+    } finally {
       if (moveBottom) {
         _setStateAndMoreToListViewEnd();
       } else {
@@ -315,7 +316,7 @@ class _ChatPageState extends State<ChatPage>
 
   /// 点击bubble
   _messageBubbleOnTap(EMMessage msg) async {
-    switch (msg.body.type) {
+    switch (msg.body!.type) {
       case EMMessageBodyType.TXT:
         break;
       case EMMessageBodyType.IMAGE:
@@ -324,12 +325,12 @@ class _ChatPageState extends State<ChatPage>
           Image img;
           if (body.fileStatus != EMDownloadStatus.SUCCESS) {
             img = Image.network(
-              body.remotePath,
+              body.remotePath!,
               fit: BoxFit.cover,
             );
           } else {
             img = Image.file(
-              File(body.localPath),
+              File(body.localPath!),
               fit: BoxFit.cover,
             );
           }
@@ -607,11 +608,6 @@ class _ChatPageState extends State<ChatPage>
   void onAnnouncementChanged(String roomId, String announcement) {}
 
   @override
-  void onChatRoomDestroyed(String roomId, String roomName) {
-    print('聊天室解散 -- $roomId, $roomName');
-  }
-
-  @override
   void onMemberExited(String roomId, String roomName, String participant) {}
 
   @override
@@ -627,10 +623,6 @@ class _ChatPageState extends State<ChatPage>
   void onOwnerChanged(String roomId, String newOwner, String oldOwner) {}
 
   @override
-  void onRemovedFromChatRoom(
-      String roomId, String roomName, String participant) {}
-
-  @override
   void callDidEnd(String channelName, EaseCallEndReason reason, int time,
       EaseCallType callType) {}
 
@@ -640,12 +632,100 @@ class _ChatPageState extends State<ChatPage>
   }
 
   @override
-  void callDidReceive(EaseCallType callType, String inviter, Map ext) {}
-
-  @override
   void callDidRequestRTCToken(
       String appId, String channelName, String account) {}
 
   @override
-  void multiCallDidInviting(List<String> excludeUsers, Map ext) {}
+  void callDidJoinChannel(String channelName, int uid) {
+    
+  }
+
+  @override
+  void callDidReceive(EaseCallType callType, String inviter, Map? ext) {
+    
+  }
+
+  @override
+  void multiCallDidInviting(List<String?> excludeUsers, Map? ext) {
+    
+  }
+
+  @override
+  void onAdminAddedFromChatRoom(String roomId, String admin) {
+    
+  }
+
+  @override
+  void onAdminRemovedFromChatRoom(String roomId, String admin) {
+    
+  }
+
+  @override
+  void onAllChatRoomMemberMuteStateChanged(String roomId, bool isAllMuted) {
+    
+  }
+
+  @override
+  void onAnnouncementChangedFromChatRoom(String roomId, String announcement) {
+    
+  }
+
+  @override
+  void onChatRoomDestroyed(String roomId, String? roomName) {
+    
+  }
+
+  @override
+  void onGroupMessageRead(List<EMGroupMessageAck> groupMessageAcks) {
+    
+  }
+
+  @override
+  void onMemberExitedFromChatRoom(
+      String roomId, String? roomName, String participant) {
+    
+  }
+
+  @override
+  void onMemberJoinedFromChatRoom(String roomId, String participant) {
+    
+  }
+
+  @override
+  void onMuteListAddedFromChatRoom(
+      String roomId, List<String> mutes, String? expireTime) {
+    
+  }
+
+  @override
+  void onMuteListRemovedFromChatRoom(String roomId, List<String> mutes) {
+    
+  }
+
+  @override
+  void onOwnerChangedFromChatRoom(
+      String roomId, String newOwner, String oldOwner) {
+    
+  }
+
+  @override
+  void onRemovedFromChatRoom(
+      String roomId, String? roomName, String? participant) {
+    
+  }
+
+  @override
+  void onWhiteListAddedFromChatRoom(String roomId, List<String> members) {
+    
+  }
+
+  @override
+  void onWhiteListRemovedFromChatRoom(String roomId, List<String> members) {
+    
+  }
+
+  @override
+  void remoteUserDidJoinChannel(String channelName, int uid, String eid) {
+    
+  }
 }

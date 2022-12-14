@@ -25,7 +25,8 @@ class ChatTabBarViewState extends State<ChatTabBarView> {
 
   Future<void> _fetchContactsFromServer() async {
     try {
-      List<EMContact> contacts =
+      //TODO:Leo:EMContact type remove
+      List<String> contacts =
           await EMClient.getInstance.contactManager.getAllContactsFromServer();
 
       setState(() {

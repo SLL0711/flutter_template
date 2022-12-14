@@ -3,8 +3,9 @@ import 'package:flutter_medical_beauty/im/az_common.dart';
 import 'package:im_flutter_sdk/im_flutter_sdk.dart';
 
 class ContactModel with ISuspensionBean {
-  ContactModel.contact(EMContact contact)
-      : this._eid = contact.eid,
+  //TODO:Leo:EMContact Model 切换 String eid问题跟踪
+  ContactModel.contact(String eid)
+      : this._eid = eid,
         this._isCustom = false;
   ContactModel.custom(String name, [Image? avatar])
       : this._eid = name,

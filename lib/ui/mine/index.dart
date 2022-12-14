@@ -143,7 +143,7 @@ class MyScreenState extends State<MyScreen> with AutomaticKeepAliveClientMixin {
       NavigatorUtil.pushPage(context, SettingScreen(), needLogin: false);
     } else if (type == 3) {
       // 客服
-      EMConversation conv =
+      EMConversation? conv =
           await EMClient.getInstance.chatManager.getConversation('13500000001');
       if (conv == null) {
         print('会话创建失败');
@@ -197,7 +197,7 @@ class MyScreenState extends State<MyScreen> with AutomaticKeepAliveClientMixin {
   void _itemAction(int type) async {
     if (type == 1) {
       /// 官方客服
-      EMConversation conv =
+      EMConversation? conv =
           await EMClient.getInstance.chatManager.getConversation('13500000001');
       if (conv == null) {
         print('会话创建失败');

@@ -17,7 +17,7 @@ import 'package:flutter_screenutil/screenutil_init.dart';
 import 'package:fluwx/fluwx.dart';
 import 'package:im_flutter_sdk/im_flutter_sdk.dart';
 import 'package:package_info/package_info.dart';
-import 'package:xinstall_flutter_plugin/xinstall_flutter_plugin.dart';
+// import 'package:xinstall_flutter_plugin/xinstall_flutter_plugin.dart';
 
 import 'api.dart';
 import 'http.dart';
@@ -59,7 +59,7 @@ class MyAppState extends State<MyApp> {
       }
     }
     // 初始XInstall
-    _initXInstall();
+    // _initXInstall();
     // 初始微信
     _initFluwx();
     // 初始环信
@@ -76,19 +76,20 @@ class MyAppState extends State<MyApp> {
   }
 
   _initEM() async {
-    EMPushConfig config = EMPushConfig()..enableAPNs('EaseIM_APNS_Product');
+    //TODO:Leo:EM init
+    // EMPushConfig config = EMPushConfig()..enableAPNs('EaseIM_APNS_Product');
     EMOptions options = EMOptions(appKey: '1133210927200841#demo');
     options.debugModel = true;
-    options.pushConfig = config;
+    // options.pushConfig = config;
     await EMClient.getInstance.init(options);
   }
 
-  _initXInstall() {
-    XinstallFlutterPlugin _xInstallFlutterPlugin =
-        XinstallFlutterPlugin.getInstance();
-    _xInstallFlutterPlugin.init(_xWakeupParamHandler);
-    _xInstallFlutterPlugin.getInstallParam(_xWakeupParamHandler);
-  }
+  // _initXInstall() {
+  //   XinstallFlutterPlugin _xInstallFlutterPlugin =
+  //       XinstallFlutterPlugin.getInstance();
+  //   _xInstallFlutterPlugin.init(_xWakeupParamHandler);
+  //   _xInstallFlutterPlugin.getInstallParam(_xWakeupParamHandler);
+  // }
 
   Future _xWakeupParamHandler(Map<String, dynamic> data) async {
     try {

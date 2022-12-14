@@ -84,7 +84,7 @@ class ChatItemState extends State<ChatItem> implements EMMessageStatusListener {
                   left: sWidth(25),
                 ),
                 child: Text(
-                  widget.msg.from,
+                  widget.msg.from!,
                   style: TextStyle(
                     fontSize: sFontSize(11),
                     color: Colors.grey,
@@ -116,7 +116,7 @@ class ChatItemState extends State<ChatItem> implements EMMessageStatusListener {
       padding: EdgeInsets.zero,
       onPressed: () {
         if (widget.avatarOnTap != null) {
-          widget.avatarOnTap!(widget.msg.from);
+          widget.avatarOnTap!(widget.msg.from!);
         }
       },
       child: Image.asset(
@@ -256,11 +256,11 @@ class ChatItemState extends State<ChatItem> implements EMMessageStatusListener {
   }
 
   _messageBubble() {
-    EMMessageBody body = widget.msg.body;
+    EMMessageBody body = widget.msg.body!;
     bool isSend = widget.msg.direction != EMMessageDirection.RECEIVE;
     return Builder(builder: (_) {
       Widget? bubble;
-      switch (widget.msg.body.type) {
+      switch (widget.msg.body!.type!) {
         case EMMessageBodyType.TXT:
           bubble = ChatTextBubble(body as EMTextMessageBody);
           break;

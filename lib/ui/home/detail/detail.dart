@@ -222,9 +222,8 @@ class DetailScreenState extends State<DetailScreen>
 
   void _bottomToolAction(int index) async {
     if (index == 1) {
-      print('=== token == ${EMClient.getInstance.accessToken}');
       //咨询
-      EMConversation conv =
+      EMConversation? conv =
           await EMClient.getInstance.chatManager.getConversation('13500000000');
       if (conv == null) {
         print('会话创建失败');

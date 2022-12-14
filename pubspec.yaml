@@ -76,8 +76,8 @@ dependencies:
   path_provider: ^2.0.2
   # 多选图片
   multi_image_picker2: ^5.0.2
-  # XInstall
-  xinstall_flutter_plugin: ^1.5.1
+  # # XInstall
+  # xinstall_flutter_plugin: ^1.5.1
   # 包信息
   package_info: ^2.0.2
   # 屏幕适配
@@ -99,8 +99,7 @@ dependencies:
       url: https://github.com/easemob/ease_call_kit.git
       ref: stable
   # 环信 sdk
-  im_flutter_sdk:
-    path: ../im_flutter_sdk-stable
+  im_flutter_sdk: 3.8.3+9
   # RTC Flutter SDK 视频通话
   ar_rtc_engine: ^4.2.0
   # 图片预览
